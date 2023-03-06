@@ -7,9 +7,11 @@
 Пример: 'web_development' => 'webDevelopment'
 */
 
-const camelCase = () => {
-    /* Тут код*/
-
+const camelCase = (str) => {
+   let wrongElem = str.indexOf('_');
+   let upperElem = wrongElem +1;
+   let newStr = str.slice(0, wrongElem) + str.charAt(upperElem).toUpperCase() + str.slice(upperElem+1, str.length)
+return newStr    
 }
-
+console.log(camelCase('hello_world'))
 module.exports = camelCase

@@ -5,8 +5,8 @@
 */
 
 const objValue = (obj, key) => {
-    /* Тут код*/
+   return obj[key]
 
 }
-
+console.log(objValue({ 'key': 'property' }, 'key'))
 module.exports = objValue

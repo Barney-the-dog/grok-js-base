@@ -5,11 +5,14 @@
 Пример: () => [ 0, 1, 2, 2, 7, 4, 3, 2, 6, 3 ]
 
 */
-
 const randomArr = () => {
-    /* Тут код*/
-
+    let arr=[];
+    for (let i=0; i<10; i++){
+        arr.push(Math.round(Math.random() * 10))
+    }
+        return arr
+    
 }
-
+console.log(randomArr())
 
 module.exports = randomArr

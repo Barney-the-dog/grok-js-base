@@ -8,9 +8,14 @@
 
 */
 
-const nestedArr = (arr, number) => {
-    /* Тут код*/
-
+const findIndex = (arr, number) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].includes(number)) {
+            return i
+        }
+    }
 }
 
-module.exports = nestedArr
+console.log(findIndex([[1], [2, 3], [4]], 3))
+    
+module.exports = findIndex

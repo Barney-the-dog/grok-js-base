@@ -10,8 +10,20 @@
 */
 
 const sumOfIntegers = (start, end) => {
-    /* Тут код*/
-
+    let sum = 0;
+    if (end > start && start > 0 && end > 0) {
+  for(let i = start; i <= end; i++){
+    sum += i;
+  }
+  return sum
+ 
+} else {
+    for(let i = end; i <= start; i++){
+        sum += i;
+      }
+    } 
+          return sum;
 }
+console.log(sumOfIntegers(7, 6))
 
 module.exports = sumOfIntegers
